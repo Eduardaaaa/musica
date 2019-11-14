@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  instrumento: MyString
+  materia: MyString
+
+two:
+  nome: MyString
+  instrumento: MyString
+  materia: MyString

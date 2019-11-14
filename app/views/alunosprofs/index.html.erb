@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Alunosprofs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aluno</th>
+      <th>Professor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @alunosprofs.each do |alunosprof| %>
+      <tr>
+        <td><%= alunosprof.aluno.nome %></td>
+        <td><%= alunosprof.professor.nome %></td>
+        <td><%= link_to 'Show', alunosprof %></td>
+        <td><%= link_to 'Edit', edit_alunosprof_path(alunosprof) %></td>
+        <td><%= link_to 'Destroy', alunosprof, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Alunosprof', new_alunosprof_path %>
